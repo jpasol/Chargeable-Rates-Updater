@@ -41,6 +41,8 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblLogout = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.TabRates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewRates)).BeginInit();
@@ -160,6 +162,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Rate";
             this.dataGridViewTextBoxColumn2.HeaderText = "Rate";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -179,12 +182,35 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 95;
             // 
+            // lblLogout
+            // 
+            this.lblLogout.AutoSize = true;
+            this.lblLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogout.Location = new System.Drawing.Point(517, 485);
+            this.lblLogout.Name = "lblLogout";
+            this.lblLogout.Size = new System.Drawing.Size(72, 12);
+            this.lblLogout.TabIndex = 2;
+            this.lblLogout.Text = "Not You? Logout";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(221, 22);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form_RatesUpdater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 498);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLogout);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_RatesUpdater";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chargeable Rates Updater";
@@ -195,6 +221,7 @@
             this.TabRatesHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.viewHistory)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -213,6 +240,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Label lblLogout;
+        private System.Windows.Forms.Label label1;
     }
 }
 

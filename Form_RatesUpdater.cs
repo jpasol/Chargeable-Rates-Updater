@@ -15,6 +15,7 @@ namespace Chargeable_Rates_Updater
         {
             InitializeComponent();
             viewRates.KeyDown += new KeyEventHandler(Save); //Add Saving Function to ctrl+s
+            lblLogout.Click += new EventHandler(Logout); //Add Logout Function
         }
 
         private Form_Login FormLogin;
@@ -56,6 +57,7 @@ namespace Chargeable_Rates_Updater
         {
             if (FormLogin.Login.Connected)
             {
+                
                 Updater = new ChargeableRatesUpdater();
                 Updater.OPConnection = FormLogin.Login.OPConnection;
                 Updater.GetData();
@@ -112,6 +114,17 @@ namespace Chargeable_Rates_Updater
                     SourceRow.Created = DateTime.Now;
                     SourceRow.Modified = true;
                 }
+            }
+        }
+
+        private void Logout(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(text: "Are you sure you want to Logout?", 
+                                caption: "Logout", 
+                                buttons: MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Updater = null;
+                ShowLogin();
             }
         }
     }

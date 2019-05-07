@@ -5,6 +5,7 @@ using System.Text;
 using System.Configuration;
 using System.Reflection;
 using System.Windows.Forms;
+using Tools;
 
 namespace Chargeable_Rates_Updater
 {
@@ -17,16 +18,19 @@ namespace Chargeable_Rates_Updater
             try
             {
 
-                OPConnection = new ADODB.Connection();
-                OPConnection.ConnectionString = $@"Provider=SQLOLEDB;
+                using (new Impersonator(Username, "sbitc", Password))
+                {
+                    OPConnection = new ADODB.Connection();
+                    OPConnection.ConnectionString = $@"Provider=SQLOLEDB;
                                             Data Source={OPServer};
                                             Initial Catalog={OPDatabase};
-                                            User ID={Username};Password={Password};";
-                OPConnection.Open();
-                Connected = true;
-                MessageBox.Show("Login Successful!");
-                
-                OPConnection.Close();
+                                            Integrated Security=SSPI;";
+                    OPConnection.Open();
+                    Connected = true;
+                    MessageBox.Show("Login Successful!");
+
+                    OPConnection.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -55,7 +59,6 @@ namespace Chargeable_Rates_Updater
             OPDatabase = userSettings.Settings.Get("OPDatabase").Value.ValueXml.InnerText;
 
         }
-
 
         public Boolean Connected;
         public ADODB.Connection OPConnection;
