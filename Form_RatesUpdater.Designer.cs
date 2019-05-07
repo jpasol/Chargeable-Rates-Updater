@@ -42,7 +42,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblLogout = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.TabRates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewRates)).BeginInit();
@@ -193,21 +193,23 @@
             this.lblLogout.TabIndex = 2;
             this.lblLogout.Text = "Not You? Logout";
             // 
-            // label1
+            // lblWelcome
             // 
-            this.label1.Location = new System.Drawing.Point(368, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblWelcome.Font = new System.Drawing.Font("Calibri", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.Blue;
+            this.lblWelcome.Location = new System.Drawing.Point(368, 9);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(221, 22);
+            this.lblWelcome.TabIndex = 3;
+            this.lblWelcome.Text = "label1";
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form_RatesUpdater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 498);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.lblLogout);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -241,7 +243,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label lblLogout;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWelcome;
     }
 }
 

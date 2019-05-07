@@ -57,7 +57,7 @@ namespace Chargeable_Rates_Updater
         {
             if (FormLogin.Login.Connected)
             {
-                
+                lblWelcome.Text = $"Hello, {FormLogin.Login.Username.ToUpper()}";
                 Updater = new ChargeableRatesUpdater();
                 Updater.OPConnection = FormLogin.Login.OPConnection;
                 Updater.GetData();
