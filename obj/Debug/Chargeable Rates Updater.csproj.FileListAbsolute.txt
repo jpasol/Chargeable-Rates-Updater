@@ -8,3 +8,15 @@ C:\Users\JPasol\Desktop\Repository\OP Dox Reports\ITS – Operations Automation 
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\ITS – Operations Automation of Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.csproj.CoreCompileInputs.cache
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\ITS – Operations Automation of Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.exe
 C:\Users\JPasol\Desktop\Repository\OP Dox Reports\ITS – Operations Automation of Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\bin\Debug\app.config
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\bin\Debug\Chargeable Rates Updater.exe.config
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\bin\Debug\Chargeable Rates Updater.exe
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\bin\Debug\Chargeable Rates Updater.pdb
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.csprojAssemblyReference.cache
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable_Rates_Updater.Form_Login.resources
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable_Rates_Updater.Form_RatesUpdater.resources
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable_Rates_Updater.Properties.Resources.resources
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.csproj.GenerateResource.cache
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.csproj.CoreCompileInputs.cache
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.exe
+C:\Users\JPasol\Desktop\Repository\OP Dox Reports\Chargeable Rates Updater\obj\Debug\Chargeable Rates Updater.pdb
