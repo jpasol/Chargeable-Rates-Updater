@@ -6,12 +6,23 @@ using System.Data;
 
 namespace Chargeable_Rates_Updater
 {
-    class ChargeableRatesUpdater
+    public class ChargeableRatesUpdater
     {
         public ADODB.Connection OPConnection;
         public RatesData Data = new RatesData();
-        
-        internal void GetData()
+
+        public double GetRates(string Ratecode, Int64 Month, Int64 Year)
+        {
+
+            double Rate = 0;
+            GetRates();
+
+            Rate = Data.Rates.AsEnumerable().Where(row => row.Created.Month <= Month &&
+            row.Created.Year <= Year &&
+            row.Chargeable == Ratecode).OrderByDescending(row => row.Created).Sum(row => row.Rate);
+            return Rate;
+        }
+        public void GetData()
         {
             GetRates();
             GetChargeables();
